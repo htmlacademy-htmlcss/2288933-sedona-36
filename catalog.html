@@ -83,13 +83,35 @@
     </label>
 <!--Окно движка цены на отель-->
     <h2 class="filter-hotels-type">Стоимость, ₽:</h2>
-    <input class="min-price-type" name="min" type="number" placeholder="от 0">
-    <input class="max-price-type" name="max" type="number" placeholder="до 9000">
+    <div class="button-price-min">
+      <input class="min-price-type" name="min" type="text" placeholder="от 0">
+      <p class="price">От</p>
+    </div>
+    <div class="button-price-max">
+      <input class="max-price-type" name="max" type="text" placeholder="до 9000">
+      <p class="price">До</p>
+   </div>
     <br>
-    <input type="range" name="slider">
+    <input type="range" name="slider" class="range-slider">
+<!--Кнопка "Применить" и кнопка "Сбросить"-->
+    <div class="filter-start">
+      <button class="filter-hotel-start" type="button" name="filter-hotel-start">
+      <span class="text-filters">Применить</span>
+      </button>
+    </div>
+    <div class="reset-filter">
+      <button class="filter-hotel-reset" type="button" name="filter-hotel-reset">
+      <span class="text-filters">Сбросить</span>
+      </button>
+    </div>
+</section>
 
+<section>
 
 </section>
+
+
+
 </main>
 
 
