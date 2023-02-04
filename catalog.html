@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
 <!--Шапка сайта с навигацией-->
@@ -31,15 +35,13 @@
       </button>
     </li>
     <li class="favorites-item">
-      <button class="favorites-button" type="button" name="search">
+      <button class="heart-button" type="button" name="search">
         <span class="visually-hidden">Избранное</span>
         <img class="favorites-icon" src="img/heart_icon.svg" widht="18" height="17" alt="Иконка сердечка.">
       </button>
     </li>
     <li class="jump-item">
-      <button class="jump button" type="button" name="jump">
-      <span class="jump-button-text">Хочу сюда!</span>
-      </button>
+      <button class="jump-button text-button" type="button" name="jump">Хочу сюда!</button>
     </li>
   </ul>
 </header>
@@ -58,11 +60,11 @@
         <input type="checkbox" name="hotels-type" value="a" checked><span>Бассейн</span>
     </label>
     <br>
-    <label class="checkbox-list">
+    <label class="checkbox-list-item">
         <input type="checkbox" name="hotels-type" value="b" checked><span>Парковка</span>
     </label>
     <br>
-    <label class="checkbox-list">
+    <label class="checkbox-list-item">
         <input type="checkbox" name="hotels-type" value="c"><span>Wi-Fi</span>
     </label>
 <!--Список типа жилья с радиокнопками и одним вариантом выбора, стоящим по умолчанию-->
@@ -91,20 +93,18 @@
     <input type="range" name="slider" class="range-slider">
 <!--Кнопка "Применить" и кнопка "Сбросить"-->
     <div class="filter-start">
-      <button class="filter-hotel-start" type="button" name="filter-hotel-start">
-      <span class="text-filters">Применить</span>
-      </button>
+      <button class="filter-hotel-start text-button" type="button" type="button" name="filter-hotel-start">Применить</button>
     </div>
     <div class="reset-filter">
-      <button class="filter-hotel-reset" type="button" name="filter-hotel-reset">
+      <button class="filter-hotel-reset text-button" type="button" type="button" name="filter-hotel-reset">
       <span class="text-filters">Сбросить</span>
       </button>
     </div>
 </section>
-<section>
+<section class="catalog-hotels">
   <h2 class="visually-hidden">Каталог гостиниц Седона</h2>
   <p class="search">Найдено гостиниц: <span class="result">38</span></p>
-  <select name="sorting-price">
+  <select name="sorting-price" class="sorting-price">
     <option value="min">Сначала дешевые</option>
     <option value="popular">Популярные</option>
     <option value="max">Сначала дорогие</option>
@@ -140,12 +140,8 @@
         <p class="price">От 4000 ₽</p>
       </div>
       <div class="reset-filter">
-        <button class="start-info" type="button" name="start-info">
-        <span class="text-info">Применить</span>
-        </button>
-        <button class="favorites-button" type="button" name="favorites-button">
-          <span class="text-info">В избранное</span>
-        </button>
+        <button class="start-info text-button" type="button" name="start-info">Применить</button>
+        <button class="favorites-button text-button" type="button" name="favorites-button">В избранное</button>
       </div>
       <p class="visually-hidden">Звезды и рейтинг</p>
       <ul class="rating-result">
@@ -154,7 +150,9 @@
           <li class="rating-stars"><img class="star" src="img/star.svg" width="18" height="17"  alt="Иконка звезды."></li>
           <li class="rating-stars"><img class="star" src="img/star.svg" width="18" height="17"  alt="Иконка звезды."></li>
       </ul>
+      <div class="span-rating">
       <span class="rating-hotel-text">Рейтинг: 8,5</span>
+      </div>
       </div>
     </li>
 
@@ -169,12 +167,8 @@
         <p class="price">От 5000 ₽</p>
       </div>
       <div class="reset-filter">
-        <button class="start-info" type="button" name="start-info">
-        <span class="text-info">Применить</span>
-        </button>
-        <button class="favorites-button" type="button" name="favorites-button">
-          <span class="text-info">В избранное</span>
-        </button>
+        <button class="start-info text-button" type="button" name="start-info">Применить</button>
+        <button class="favorites-button text-button" type="button" name="favorites-button">В избранное</button>
       </div>
       <p class="visually-hidden">Звезды и рейтинг</p>
       <ul class="rating-result">
@@ -183,7 +177,9 @@
           <li class="rating-stars"><img class="star" src="img/star.svg" width="18" height="17"  alt="Иконка звезды."></li>
           <li class="rating-stars"><img class="star" src="img/star.svg" width="18" height="17"  alt="Иконка звезды."></li>
       </ul>
+      <div class="span-rating">
       <span class="rating-hotel-text">Рейтинг: 9,2</span>
+      </div>
       </div>
     </li>
 
@@ -198,12 +194,8 @@
         <p class="price">От 2500 ₽</p>
       </div>
       <div class="reset-filter">
-        <button class="start-info" type="button" name="start-info">
-        <span class="text-info">Применить</span>
-        </button>
-        <button class="favorites-button" type="button" name="favorites-button">
-          <span class="text-info">В избранное</span>
-        </button>
+        <button class="start-info text-button" type="button" name="start-info">Применить</button>
+        <button class="favorites-button text-button" type="button" name="favorites-button">В избранное</button>
       </div>
       <p class="visually-hidden">Звезды и рейтинг</p>
       <ul class="rating-result">
@@ -211,8 +203,10 @@
           <li class="rating-stars"><img class="star" src="img/star.svg" width="18" height="17"  alt="Иконка звезды."></li>
           <li class="rating-stars"><img class="star" src="img/star.svg" width="18" height="17"  alt="Иконка звезды."></li>
       </ul>
+      <div class="span-rating">
       <span class="rating-hotel-text">Рейтинг: 6,9</span>
       </div>
+    </div>
     </li>
 
     <li class="catalog-hotel-cards-item">
@@ -226,19 +220,17 @@
         <p class="price">От 1500 ₽</p>
       </div>
       <div class="reset-filter">
-        <button class="start-info" type="button" name="start-info">
-        <span class="text-info">Применить</span>
-        </button>
-        <button class="favorites-button" type="button" name="favorites-button">
-          <span class="text-info">В избранное</span>
-        </button>
+        <button class="start-info text-button" type="button" name="start-info">Применить</button>
+        <button class="favorites-button text-button" type="button" name="favorites-button">В избранное</button>
       </div>
       <p class="visually-hidden">Звезды и рейтинг</p>
       <ul class="rating-result">
           <li class="rating-stars"><img class="star" src="img/star.svg" width="18" height="17"  alt="Иконка звезды."></li>
           <li class="rating-stars"><img class="star" src="img/star.svg" width="18" height="17"  alt="Иконка звезды."></li>
       </ul>
+      <div class="span-rating">
       <span class="rating-hotel-text">Рейтинг: 5,0</span>
+      </div>
       </div>
     </li>
   </ul>
