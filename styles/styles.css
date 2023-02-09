@@ -23,8 +23,6 @@ html {
 }
 
 body {
-  margin: 0;
-  display: flex;
   font-family: «PT Sans»;
   font-style: normal;
   font-weight: 400;
@@ -35,6 +33,7 @@ body {
 }
 
 .site-container {
+  margin: 0;
   margin: 0 auto;
   width: 1200px;
   min-height: 100%;
@@ -106,9 +105,6 @@ a.hero {
 .advantages-image {
   display: inline-block;
 }
-
-
-
 
 .good-list {
   width: 1200px;
