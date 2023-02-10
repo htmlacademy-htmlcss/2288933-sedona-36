@@ -30,9 +30,7 @@ body {
   line-height: 21px;
   color: #333333;
   background-color: #FFFFFF;
-}
 
-.site-container {
   margin: 0;
   margin: 0 auto;
   width: 1200px;
@@ -42,17 +40,21 @@ body {
   flex-direction: column;
 }
 
-.navigation {
-  width: 1060px;
+.page-header {
+  color: #000000;
+  background: #FFFFFF;
   display: flex;
-  margin: 0 auto;
+  padding: 0;
+  margin: 0;
+  align-items: center;
 }
 
-a.hero {
-  max-width: 140px;
+.page-header .hero {
+  width: 140px;
   margin: 0;
   padding: 0;
-  margin-right: 40px;
+  padding-left: 70px;
+  padding-right: 40px;
 }
 
 .navigation-list {
@@ -69,6 +71,7 @@ a.hero {
   margin: 0;
   padding: 0;
   margin-left: auto;
+  padding-right: 70px;
   display: flex;
 }
 
@@ -79,6 +82,7 @@ a.hero {
 .page-container {
   width: 1200px;
   margin: 0 auto;
+
 }
 
 .advantages-list {
@@ -121,6 +125,7 @@ a.hero {
   width: 1060px;
   display: flex;
   margin: 0 auto;
+  align-items: center;
 }
 
 .social-list {
@@ -137,13 +142,6 @@ a.hero {
   margin-left: 236px;
   padding: 0;
 }
-
-
-.page-header {
-  color: #000000;
-  background: #FFFFFF;
-}
-
 
 /* Селекторы по главной странице */
 .navigation-item,
@@ -426,7 +424,8 @@ a.hero {
 .catalog-hotel-cards {
   margin: 0 auto;
   padding: 0;
-  max-width: 1060px;;
+  max-width: 1060px;
+  ;
   min-height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -634,6 +633,7 @@ a.hero {
 
 .page-footer {
   background-color: #FFFFFF;
+
 }
 
 .newsletters-form .field {
