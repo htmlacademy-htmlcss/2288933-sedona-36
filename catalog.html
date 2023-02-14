@@ -47,75 +47,78 @@
         </li>
       </ul>
     </header>
-    <main class="main-catalog page-catalog">
-      <h1 class="sedona-hotels">Гостиницы Седоны</h1>
+
+    <!--Содержимое каталога-->
+    <main class="main-catalog">
       <section class="filter-hotels">
-        <h2 class="visually-hidden">Список фильтров для подбора гостиницы в городе Седона.</h2>
-        <ul class="bread-crubs-list">
-          <li class="bread-crubs">
-            <a class="home-icon-index" href="index.html">
-              <img class="home-icon" src="img/house-icon.svg" width="12" height="12"
-                alt="Иконка возврата на главную страницу.">
-            </a>
-          </li>
-          <li class="bread-crubs">
-            <a class="return"><span class="transfer-hotels">Гостиницы</span></a>
-          </li>
-        </ul>
-        <!--Список инфраструктуры с радиокнопками и несколькими вариантами выбора, выбранными по умолчанию-->
-        <div class="group-flex">
-          <div class="group-checkbox">
-            <p class="advantages-hotels-type">Инфраструктура:</p>
-            <label class="checkbox-list-item">
-              <input type="checkbox" name="hotels-type" value="a" checked><span>Бассейн</span>
-            </label>
-            <br>
-            <label class="checkbox-list-item">
-              <input type="checkbox" name="hotels-type" value="b" checked><span>Парковка</span>
-            </label>
-            <br>
-            <label class="checkbox-list-item">
-              <input type="checkbox" name="hotels-type" value="c"><span>Wi-Fi</span>
-            </label>
-          </div>
-          <!--Список типа жилья с радиокнопками и одним вариантом выбора, стоящим по умолчанию-->
-          <div class="group-radio">
-            <p class="filter-hotels-type">Тип жилья:</p>
-            <label class="hotels-type-item">
-              <input type="radio" name="hotels-type" value="a" checked><span>Гостиница</span>
-            </label>
-            <br>
-            <label class="hotels-type-item">
-              <input type="radio" name="hotels-type" value="b"><span>Мотель</span>
-            </label>
-            <br>
-            <label class="hotels-type-item">
-              <input type="radio" name="hotels-type" value="c"><span>Апартаменты</span>
-            </label>
+        <div class="filter-content">
+          <h1 class="sedona-hotels">Гостиницы Седоны</h1>
+          <h2 class="visually-hidden">Список фильтров для подбора гостиницы в городе Седона.</h2>
+          <ul class="bread-crubs-list">
+            <li class="bread-crubs">
+              <a class="home-icon-index" href="index.html">
+                <img class="home-icon" src="img/house-icon.svg" width="12" height="12"
+                  alt="Иконка возврата на главную страницу.">
+              </a>
+            </li>
+            <li class="bread-crubs">
+              <a class="return"><span class="transfer-hotels">Гостиницы</span></a>
+            </li>
+          </ul>
+          <!--Список инфраструктуры с радиокнопками и несколькими вариантами выбора, выбранными по умолчанию-->
+          <div class="group-flex-container">
+          <div class="group-flex">
+            <div class="group-checkbox">
+              <p class="advantages-hotels-type">Инфраструктура:</p>
+              <label class="checkbox-list-item">
+                <input type="checkbox" name="hotels-type" value="a" checked><span>Бассейн</span>
+              </label>
+              <br>
+              <label class="checkbox-list-item">
+                <input type="checkbox" name="hotels-type" value="b" checked><span>Парковка</span>
+              </label>
+              <br>
+              <label class="checkbox-list-item">
+                <input type="checkbox" name="hotels-type" value="c"><span>Wi-Fi</span>
+              </label>
+            </div>
+            <!--Список типа жилья с радиокнопками и одним вариантом выбора, стоящим по умолчанию-->
+            <div class="group-radio">
+              <p class="filter-hotels-type">Тип жилья:</p>
+              <label class="hotels-type-item">
+                <input type="radio" name="hotels-type" value="a" checked><span>Гостиница</span>
+              </label>
+              <br>
+              <label class="hotels-type-item">
+                <input type="radio" name="hotels-type" value="b"><span>Мотель</span>
+              </label>
+              <br>
+              <label class="hotels-type-item">
+                <input type="radio" name="hotels-type" value="c"><span>Апартаменты</span>
+              </label>
+            </div>
           </div>
           <!--Окно движка цены на отель-->
-          <div class="group-price">
-            <p class="filter-hotels-type">Стоимость, ₽:</p>
-            <div class="button-price">
-              <input class="min-price-type" name="min" type="text" placeholder="от 0">
-
-              <input class="max-price-type" name="max" type="text" placeholder="до 9000">
+          <div class="price-range">
+            <div class="group-price">
+              <p class="filter-hotels-type">Стоимость, ₽:</p>
+              <div class="button-price">
+                <input class="min-price-type" name="min" type="text" placeholder="от 0">
+                <input class="max-price-type" name="max" type="text" placeholder="до 9000">
+              </div>
+              <input type="range" name="slider" class="range-slider">
             </div>
-            <input type="range" name="slider" class="range-slider">
-          </div>
-          <!--Кнопка "Применить" и кнопка "Сбросить"-->
-          <div class="group-button">
-            <div class="filter-start">
+            <!--Кнопка "Применить" и кнопка "Сбросить"-->
+            <div class="group-button">
               <button class="filter-hotel-start text-button" type="button" type="button"
                 name="filter-hotel-start">Применить</button>
-            </div>
-            <div class="reset-filter">
               <button class="filter-hotel-reset text-button" type="button" type="button" name="filter-hotel-reset">
                 <span class="text-filters">Сбросить</span>
               </button>
             </div>
           </div>
         </div>
+      </div>
       </section>
       <section class="catalog-hotels">
         <h2 class="visually-hidden">Каталог гостиниц Седона</h2>
@@ -296,7 +299,6 @@
             </div>
           </li>
         </ul>
-        <hr>
         <!--Внесла пагинацию каталога-->
         <ul class="pagination-list">
           <li class="pagination-item">
@@ -320,7 +322,7 @@
       <!--Секция подписки на рассылку-->
       <section class="newsletters">
         <h2 class="visually-hidden">Форма подписки на рассылку полезной информации.</h2>
-        <div class="newsletters-background">
+        <div class="newsletters-background-fall">
           <p class="news">Подпишитесь на рассылку</p>
           <p class="text-news">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletters-form" action="#" method="post">
