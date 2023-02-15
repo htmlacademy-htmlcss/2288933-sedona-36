@@ -71,7 +71,7 @@ body {
 
 .navigation-user {
   list-style: none;
-  max-width: 268px;
+  min-width: 268px;
   margin: 0;
   padding: 0;
   margin-left: auto;
@@ -101,8 +101,10 @@ body {
 
 .navigation-user .search-button,
 .navigation-user .heart-button {
-  min-width: 20px;
-  min-height: 36px;
+  margin: 0;
+  padding: 0;
+  min-width: 44px;
+  min-height: 64px;
 }
 
 .navigation-item,
@@ -115,8 +117,9 @@ body {
 .social-item {
   padding: 0;
   margin: 0;
-  min-width: 48px;
+  min-width: 47px;
   min-height: 40px;
+  align-items: center;
 }
 
 .button-view-item,
@@ -157,7 +160,8 @@ body {
 
 .search-data {
   padding: 0;
-  margin: ;
+  margin: 0;
+  margin-bottom: 54px;
 }
 
 .hero-text {
@@ -289,6 +293,9 @@ body {
 }
 
 .new-search-hotel {
+  padding: 0;
+  margin: 0;
+  padding: 8px 50px;
   background-color: #756157;
   border: none;
   border-radius: 4px;
@@ -366,10 +373,9 @@ body {
 /* Селекторы по странице каталога */
 
 .sedona-hotels {
-  margin: 0;
+  margin-top: 0;
   padding: 0;
   margin-bottom: 8px;
-  width: 495px;
   min-height: 78px;
   font-weight: 700;
   font-size: 60px;
@@ -429,6 +435,7 @@ body {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .group-flex-container {
@@ -454,7 +461,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: left;
-  margin-right: 70px;
+
 }
 
 .group-radio {
@@ -466,10 +473,12 @@ body {
 }
 
 .sorting-form {
-padding: 0;
-margin: 0;
+  padding: 0;
+  margin: 0;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 70px;
 }
 
 .group-price {
@@ -478,10 +487,10 @@ margin: 0;
 }
 
 .price-range {
- padding: 0;
- margin: 0;
- display: flex;
- flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .group-button {
@@ -493,32 +502,39 @@ margin: 0;
 }
 
 .button-view-list {
-  max-width: 160px;
+  min-width: 160px;
   margin: 0;
   padding: 0;
-  margin-left: auto;
   display: flex;
+  gap: 10px;
 }
 
 .sorting-price {
-  max-width: 292px;
+  min-width: 292px;
   height: 100%;
   margin: 0;
   padding: 0;
-  margin-left: 200px;
+}
+
+.sorting-block {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  width: 522px;
+  min-height: 49px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .catalog-hotel-cards {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
+  margin: 0 70px 80px 70px;
+
   max-width: 1060px;
-  ;
   min-height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-4;
-
-
 }
 
 .transfer-hotels {
@@ -541,6 +557,11 @@ margin: 0;
 .hotels-type-item {
   line-height: 23px;
   color: #FFFFFF;
+}
+
+.checkbox-list-item {
+  margin: 0;
+  padding: 0;
 }
 
 .price {
@@ -599,6 +620,8 @@ margin: 0;
 }
 
 .catalog-hotels .search {
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -695,8 +718,14 @@ margin: 0;
   text-align: right;
 }
 
-.pagination-item {
-  display: inline;
+.pagination-list {
+  padding: 0;
+  margin: 0;
+  width: auto;
+  margin: 0 70px 60px 70px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .pagination-number,
@@ -817,6 +846,14 @@ margin: 0;
 }
 
 .newsletters-background-fall {
+  margin: 0;
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
+  min-height: 214px;
+  display: flex;
+  flex-direction: column;
+
   background-color: #FFFFFF;
 }
 
@@ -829,4 +866,8 @@ margin: 0;
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.dark-theme {
+  color: #000000;
 }
