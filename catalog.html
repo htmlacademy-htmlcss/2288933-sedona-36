@@ -68,32 +68,44 @@
             <div class="group-flex">
               <div class="group-checkbox">
                 <p class="advantages-hotels-type">Инфраструктура:</p>
+                <ul class="filter-list">
+                  <li class="filter-list-item">
                 <label class="checkbox-list-item">
-                  <input type="checkbox" name="hotels-type" value="a" checked><span>Бассейн</span>
+                  <input class="right-gap" type="checkbox" name="hotels-type" value="a" checked><span>Бассейн</span>
                 </label>
-                <br>
+              </li>
+              <li class="filter-list-item">
                 <label class="checkbox-list-item">
-                  <input type="checkbox" name="hotels-type" value="b" checked><span>Парковка</span>
+                  <input class="right-gap" type="checkbox" name="hotels-type" value="b" checked><span>Парковка</span>
                 </label>
-                <br>
+              </li>
+              <li class="filter-list-item">
                 <label class="checkbox-list-item">
-                  <input type="checkbox" name="hotels-type" value="c"><span>Wi-Fi</span>
+                  <input class="right-gap" type="checkbox" name="hotels-type" value="c"><span>Wi-Fi</span>
                 </label>
+              </li>
+              </ul>
               </div>
               <!--Список типа жилья с радиокнопками и одним вариантом выбора, стоящим по умолчанию-->
               <div class="group-radio">
                 <p class="filter-hotels-type">Тип жилья:</p>
+                <ul class="filter-radio">
+                  <li class="filter-radio-item">
                 <label class="hotels-type-item">
-                  <input type="radio" name="hotels-type" value="a" checked><span>Гостиница</span>
+                  <input class="radio-control" type="radio" name="hotels-type" value="a" checked><span>Гостиница</span>
                 </label>
-                <br>
+                  </li>
+                  <li class="filter-radio-item">
                 <label class="hotels-type-item">
-                  <input type="radio" name="hotels-type" value="b"><span>Мотель</span>
+                  <input class="radio-control" type="radio" name="hotels-type" value="b"><span>Мотель</span>
                 </label>
-                <br>
+              </li>
+              <li class="filter-radio-item">
                 <label class="hotels-type-item">
-                  <input type="radio" name="hotels-type" value="c"><span>Апартаменты</span>
+                  <input class="radio-control" type="radio" name="hotels-type" value="c"><span>Апартаменты</span>
                 </label>
+              </li>
+              </ul>
               </div>
             </div>
             <!--Окно движка цены на отель-->
@@ -317,10 +329,12 @@
             <a class="pagination-number" href="#" target="_self">4</a>
           </li>
           <li class="pagination-item">
+            <a class="pagination-fall fall-number" href="#" target="_self">...</a>
+          </li>
+          <li class="pagination-item">
             <a class="pagination-number" href="#" target="_self">10</a>
           </li>
         </ul>
-        <span class="pagination-fall">...</span>
       </section>
       <!--Секция подписки на рассылку-->
       <section class="newsletters">

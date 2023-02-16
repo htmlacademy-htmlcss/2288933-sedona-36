@@ -446,8 +446,9 @@ color: #000000;
 
 .filter-content {
   padding: 0;
+  padding: 35px 70px 70px 70px;
   margin: 0;
-  min-height: 307px;
+  min-height: 412px;
 }
 
 .bread-crubs-list {
@@ -461,35 +462,53 @@ color: #000000;
 .group-flex-container {
   padding: 0;
   margin: 0;
-  width: 1060px;
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .group-flex {
   margin: 0;
   padding: 0;
-  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
-  width: 1060px;
   min-height: 160px;
 }
 
 .group-checkbox {
-  width: 150px;
+  min-width: 150px;
   margin: 0;
   padding: 0;
   text-align: left;
+  display: inline-block;
+  gap: 16px;
+}
 
+.filter-list, .filter-radio {
+  margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+}
+
+.filter-list-item, .filter-radio-item {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.right-gap, .radio-control {
+  padding: 0;
+  margin: 0 16px 0 0;
 }
 
 .group-radio {
-  width: 150px;
+  min-width: 151px;
   margin: 0;
   padding: 0;
   text-align: left;
-  margin-right: 140px;
+  display: inline-block;
 }
 
 .sorting-form {
@@ -501,24 +520,29 @@ color: #000000;
   padding: 50px 70px;
 }
 
-.group-price {
-  padding: 0;
+.group-button {
   margin: 0;
+  margin-left: 70px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .price-range {
-  padding: 0;
   margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
+  min-width: 549px;
+  min-height: 160px;
 }
 
-.group-button {
+.group-price {
   margin: 0;
   padding: 0;
-  padding-right: 70px;
-  display: flex;
-  flex-direction: column;
+  min-width: 288px;
+  display: inline-block;
 }
 
 .button-view-list {
@@ -567,6 +591,7 @@ color: #000000;
   margin: 0;
   padding: 0;
   margin-bottom: 32px;
+  margin-right: 70px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -608,6 +633,10 @@ color: #000000;
 }
 
 .filter-hotel-start {
+  margin: 0;
+  padding: 8px 50px;
+  margin-top: 55px;
+  margin-bottom: 40px;
   background-color: #82B3D3;
   min-width: 191px;
   min-height: 36px;
@@ -765,6 +794,18 @@ color: #000000;
   gap: 8px;
 }
 
+.fall-number {
+  padding-top: 17px;
+  width: 17px;
+  height: 22px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #000000;
+    background-color: transparent;
+    text-decoration: none;
+}
+
 .pagination-number,
 .pagination-number-active {
   font-weight: 700;
@@ -779,7 +820,8 @@ color: #000000;
   width: 60px;
   margin-left: auto;
   margin-right: auto;
-  padding: 7px 12px;
+    padding-top: 12px;
+
 }
 
 .pagination-number {
