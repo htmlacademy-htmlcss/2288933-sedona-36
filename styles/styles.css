@@ -85,6 +85,11 @@ body {
   display: block;
 }
 
+.navigation-link:hover {
+  text-decoration: underline 2px #756257;
+  text-underline-offset: 21px;
+}
+
 .navigation-user {
   margin: 0;
   margin-left: auto;
@@ -170,11 +175,6 @@ body {
   height: 40px;
   min-width: 47px;
   color: #83B3D3;
-}
-
-.navigation-item-current {
-  text-decoration: underline 2px #756257;
-  text-underline-offset: 21px;
 }
 
 .social-item {
@@ -579,6 +579,7 @@ body {
   background-repeat: no-repeat;
   width: 11px;
   height: 11px;
+  margin-left: 11px;
 }
 
 .main-catalog {
@@ -1020,7 +1021,7 @@ body {
 }
 
 .two-stars {
-  width: 50px;
+  width: 41px;
 }
 
 .pagination-list {
@@ -1037,18 +1038,27 @@ body {
 
 .fall-number {
   padding-top: 17px;
-  width: 17px;
-  height: 22px;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
   color: #000000;
   background-color: transparent;
+  border: 1px solid transparent;
   text-decoration: none;
+}
+
+.pagination-fall {
+  display: block;
+  box-sizing: border-box;
+  padding-top: 12px;
+  height: 60px;
+  width: 60px;
+  border-radius: 4px;
 }
 
 .pagination-number,
 .pagination-number-active {
+  font-family: "PT Sans";
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
