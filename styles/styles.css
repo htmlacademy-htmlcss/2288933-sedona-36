@@ -8,7 +8,6 @@
 
 @font-face {
   font-family: "PT Sans";
-  font-style: bold;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
@@ -89,22 +88,34 @@ body {
   color: #756157;
 }
 
-.navigation-link:focus {
-  color: #756157;
-}
+
 
 .navigation-link:active {
   color: rgba(117, 97, 87, 0.3);
 }
 
 .navigation-link-current {
-  text-decoration: underline 2px #756257;
-  text-underline-offset: 21px;
+  position: relative;
+}
+
+
+.navigation-link-current::after {
+  position: absolute;
+  content: "";
+  right: 16px;
+  left: 16px;
+  bottom: 0;
+  height: 2px;
+  background-color: #756257;
+}
+
+.navigation-link-current::after:not(:first-child) {
+  border: none;
 }
 
 .navigation-link:hover {
   text-decoration: underline 2px #756257;
-  text-underline-offset: 21px;
+  text-underline-offset: 22px;
 }
 
 .navigation-user {
@@ -123,6 +134,21 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
+}
+
+.search-item:hover,
+.favorites-item:hover {
+  opacity: 0.5;
+}
+
+.search-item:focus,
+.favorites-item:focus {
+  opacity: 0.5;
+}
+
+.search-item:active,
+.favorites-item:active {
+  opacity: 0.2;
 }
 
 .favorites-item {
@@ -358,6 +384,10 @@ card-link:hover {
   padding: 102px 85px;
 }
 
+.text-block:nth-child(2n) {
+  padding: 152px 85px;
+}
+
 
 .housing::before {
   position: absolute;
@@ -468,9 +498,30 @@ card-link:hover {
 }
 
 .uppercase {
+  position: relative;
   margin: 0 auto;
   padding: 0;
   max-width: 175px;
+}
+
+.uppercase::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  left: 50%;
+  margin-left: -30px;
+  left: 50%;
+  bottom: -30px;
+  height: 2px;
+  background-color: currentColor;
+  width: 60px;
+  opacity: 30%;
+}
+
+.description {
+  padding: 0;
+  margin: 0;
+  margin-top: 62px;
 }
 
 .black {
@@ -512,17 +563,21 @@ card-link:hover {
 }
 
 .new-search-hotel {
+  font-family: "PT Sans", sans-serif;
+  display: inline-block;
+
+  font-size: 20px;
+  line-height: 36px;
   padding: 0;
   margin: 0;
-  padding: 8px 50px;
   background-color: #756157;
   border: none;
   border-radius: 4px;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
   text-transform: uppercase;
   color: #FFFFFF;
+  cursor: pointer;
+  padding: 8px 50px;
 }
 
 .new-search-hotel:hover {
@@ -544,7 +599,7 @@ card-link:hover {
 }
 
 .phone-number {
-  margin: 0;
+  margin: 0 auto;
   margin-left: 178px;
   padding: 0;
   font-size: 40px;
@@ -563,7 +618,7 @@ card-link:hover {
 }
 
 .phone-number:active {
-  color:rgba(117, 97, 87, 0.3);
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .text-uppercase {
@@ -571,7 +626,7 @@ card-link:hover {
 }
 
 .social-list {
-  margin: 5px 0;
+  margin: 0;
   padding: 0;
   list-style-type: none;
   width: 200px;
@@ -598,7 +653,7 @@ card-link:hover {
 }
 
 .html-logo:active {
-  color:rgba(117, 97, 87, 0.3);
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .html-color {
@@ -831,6 +886,7 @@ card-link:hover {
 }
 
 .catalog-hotel-cards {
+  position: relative;
   margin: 40px auto 0;
   padding: 0;
   width: 1060px;
@@ -838,6 +894,18 @@ card-link:hover {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   gap: 20px;
+}
+
+.catalog-hotel-cards::after {
+  position: absolute;
+  content: "";
+  width: 1060px;
+  height: 2px;
+  background-color: #E6E6E6;
+  opacity: 30%;
+  margin-left: 0;
+  left: 0;
+  bottom: -40px;
 }
 
 .catalog-hotel-cards-item {
@@ -933,19 +1001,35 @@ card-link:hover {
   text-align: left;
 }
 
+.min-price-type::placeholder, .max-price-type::placeholder {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+
+.min-price-type:hover,
+.max-price-type:hover {}
+
+.min-price-type:hover,
+.max-price-type:hover {}
+
 .min-price-type:hover,
 .max-price-type:hover {
-
+  background-color: #E6E6E6;
 }
 
 .min-price-type:focus,
 .max-price-type:focus {
-
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;
 }
 
 .min-price-type:active,
 .max-price-type:active {
-
+  background-color: #F2F2F2;
+  border: 3px solid #000000;
 }
 
 .button-price {
@@ -1046,7 +1130,7 @@ card-link:hover {
 }
 
 .sorting-price:hover {
-border-color: #68A2CA;
+  border-color: #68A2CA;
 }
 
 .sorting-price:focus {
@@ -1271,7 +1355,7 @@ border-color: #68A2CA;
 
 .pagination-number:active {
   background-color: #82B3D3;
-  color:  rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-number-active {
@@ -1329,7 +1413,7 @@ border-color: #68A2CA;
   padding-bottom: 96px;
 }
 
-.newsletters-form .field {
+.field {
   margin: 0;
   padding: 0;
   width: 452px;
@@ -1339,6 +1423,21 @@ border-color: #68A2CA;
   border-radius: 4px 0 0 4px;
   line-height: 24px;
 }
+
+.field:hover {
+  background-color: #E6E6E6;
+}
+
+.field:focus {
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;
+}
+
+.field:focus-within {
+  background-color: #F2F2F2;
+  border: 3px solid #000000;
+}
+
 
 .newsletters-form {
   display: flex;
@@ -1363,7 +1462,7 @@ border-color: #68A2CA;
 }
 
 .newsletters-button:hover {
-background-color: #68A2CA;
+  background-color: #68A2CA;
 }
 
 .newsletters-button:focus {
