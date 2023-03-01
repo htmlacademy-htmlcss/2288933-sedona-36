@@ -774,22 +774,16 @@ card-link:hover {
   padding: 0;
   margin: 0;
   margin-top: 40px;
+  min-height: 160px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
-.group-flex {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 160px;
-}
 
 .group-checkbox {
-  min-width: 150px;
+  width: 151px;
   margin: 0;
+  margin-right: 70px;
   padding: 0;
   text-align: left;
   display: inline-block;
@@ -852,12 +846,6 @@ card-link:hover {
   min-height: 160px;
 }
 
-.group-price {
-  margin: 0;
-  padding: 0;
-  min-width: 288px;
-  display: inline-block;
-}
 
 .button-view-list {
   margin: 0;
@@ -937,12 +925,20 @@ card-link:hover {
   color: #FFFFFF;
 }
 
+.filter-hotels-price {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 32px;;
+}
+
 .advantages-hotels-type,
 .filter-hotels-type {
   margin: 0;
   padding: 0;
-  margin-bottom: 32px;
-  margin-right: 70px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -951,6 +947,8 @@ card-link:hover {
 
 .checkbox-list-item,
 .hotels-type-item {
+  font-weight: 400;
+  font-family: "PT Sans";
   line-height: 23px;
   color: #FFFFFF;
 }
@@ -1001,7 +999,8 @@ card-link:hover {
   text-align: left;
 }
 
-.min-price-type::placeholder, .max-price-type::placeholder {
+.min-price-type::placeholder,
+.max-price-type::placeholder {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
@@ -1032,10 +1031,18 @@ card-link:hover {
   border: 3px solid #000000;
 }
 
-.button-price {
+.block-price {
   padding: 0;
   margin: 0;
   margin-bottom: 36px;
+}
+
+.button-price {
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  min-width: 288px;
+  display: inline-block;
 }
 
 .filter-hotel-start {
@@ -1076,7 +1083,6 @@ card-link:hover {
 .filter-hotel-reset {
   min-width: 191px;
   min-height: 36px;
-  outline: none;
   border: 0;
   background: transparent;
   color: #FFFFFF;

@@ -65,73 +65,69 @@
             </li>
           </ul>
           <!--Список инфраструктуры с радиокнопками и несколькими вариантами выбора, выбранными по умолчанию-->
-          <div class="group-flex-container">
-            <div class="group-flex">
-              <div class="group-checkbox">
-                <p class="advantages-hotels-type">Инфраструктура:</p>
-                <ul class="filter-list">
-                  <li class="filter-list-item">
-                    <label class="checkbox-list-item">
-                      <input class="right-gap" type="checkbox" name="hotels-type" value="a" checked><span>Бассейн</span>
-                    </label>
-                  </li>
-                  <li class="filter-list-item">
-                    <label class="checkbox-list-item">
-                      <input class="right-gap" type="checkbox" name="hotels-type" value="b"
-                        checked><span>Парковка</span>
-                    </label>
-                  </li>
-                  <li class="filter-list-item">
-                    <label class="checkbox-list-item">
-                      <input class="right-gap" type="checkbox" name="hotels-type" value="c"><span>Wi-Fi</span>
-                    </label>
-                  </li>
-                </ul>
-              </div>
-              <!--Список типа жилья с радиокнопками и одним вариантом выбора, стоящим по умолчанию-->
-              <div class="group-radio">
-                <p class="filter-hotels-type">Тип жилья:</p>
-                <ul class="filter-radio">
-                  <li class="filter-radio-item">
-                    <label class="hotels-type-item">
-                      <input class="radio-control" type="radio" name="hotels-type" value="a"
-                        checked><span>Гостиница</span>
-                    </label>
-                  </li>
-                  <li class="filter-radio-item">
-                    <label class="hotels-type-item">
-                      <input class="radio-control" type="radio" name="hotels-type" value="b"><span>Мотель</span>
-                    </label>
-                  </li>
-                  <li class="filter-radio-item">
-                    <label class="hotels-type-item">
-                      <input class="radio-control" type="radio" name="hotels-type" value="c"><span>Апартаменты</span>
-                    </label>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!--Окно движка цены на отель-->
-            <div class="price-range">
-              <div class="group-price">
-                <p class="filter-hotels-type">Стоимость, ₽:</p>
-                <div class="button-price">
+            <form class="group-flex-container" action="https://echo.htmlacademy.ru/" method="get">
+                <fieldset class="group-checkbox">
+                  <legend class="advantages-hotels-type">Инфраструктура:</p>
+                  <ul class="filter-list">
+                    <li class="filter-list-item">
+                      <label class="checkbox-list-item">
+                        <input class="right-gap" type="checkbox" name="hotels-type" value="a"
+                          checked><span>Бассейн</span>
+                      </label>
+                    </li>
+                    <li class="filter-list-item">
+                      <label class="checkbox-list-item">
+                        <input class="right-gap" type="checkbox" name="hotels-type" value="b"
+                          checked><span>Парковка</span>
+                      </label>
+                    </li>
+                    <li class="filter-list-item">
+                      <label class="checkbox-list-item">
+                        <input class="right-gap" type="checkbox" name="hotels-type" value="c"><span>Wi-Fi</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <!--Список типа жилья с радиокнопками и одним вариантом выбора, стоящим по умолчанию-->
+                <fieldset class="group-radio">
+                  <legend class="filter-hotels-type">Тип жилья:</p>
+                  <ul class="filter-radio">
+                    <li class="filter-radio-item">
+                      <label class="hotels-type-item">
+                        <input class="radio-control" type="radio" name="hotels-type" value="hotel"
+                          checked><span>Гостиница</span>
+                      </label>
+                    </li>
+                    <li class="filter-radio-item">
+                      <label class="hotels-type-item">
+                        <input class="radio-control" type="radio" name="hotels-type" value="motel"><span>Мотель</span>
+                      </label>
+                    </li>
+                    <li class="filter-radio-item">
+                      <label class="hotels-type-item">
+                        <input class="radio-control" type="radio" name="hotels-type" value="apartment"><span>Апартаменты</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+              <!--Окно движка цены на отель-->
+                <fieldset class="button-price">
+                  <legend class="filter-hotels-price">Стоимость, ₽:</legend>
+                  <div class="block-price">
                   <input class="min-price-type" name="min" type="text" placeholder="от 0">
-                  <input class="max-price-type" name="max" type="text" placeholder="до 9000">
+                  <input class="max-price-type" name="max" type="text" placeholder="до 9000"><br>
                 </div>
-                <input type="range" name="slider" class="range-slider">
-              </div>
-              <!--Кнопка "Применить" и кнопка "Сбросить"-->
-              <div class="group-button">
-                <button class="filter-hotel-start text-button" type="button"
-                  name="filter-hotel-start">Применить</button>
-                <button class="filter-hotel-reset text-button" type="button" name="filter-hotel-reset">
-                  <span class="text-filters">Сбросить</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+                  <input type="range" name="slider" class="range-slider">
+                </fieldset>
+                <!--Кнопка "Применить" и кнопка "Сбросить"-->
+                <div class="group-button">
+                  <button class="filter-hotel-start text-button" type="button"
+                    name="filter-hotel-start">Применить</button>
+                  <button class="filter-hotel-reset text-button" type="button" name="filter-hotel-reset">
+                    <span class="text-filters">Сбросить</span>
+                  </button>
+                </div>
+          </form>
       </section>
       <section class="catalog-hotels">
         <h2 class="visually-hidden">Каталог гостиниц Седона</h2>
