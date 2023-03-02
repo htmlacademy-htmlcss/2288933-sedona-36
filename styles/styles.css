@@ -115,7 +115,7 @@ body {
 
 .navigation-link:hover {
   text-decoration: underline 2px #756257;
-  text-underline-offset: 22px;
+  text-underline-offset: 23px;
 }
 
 .navigation-user {
@@ -183,38 +183,6 @@ body {
   padding: 0;
   padding: 8px 34px;
   cursor: pointer;
-  color: #FFFFFF;
-}
-
-.jump-button:hover,
-card-link:hover {
-  background-color: #615048;
-}
-
-.jump-button:focus,
-.card-link:focus {
-  background-color: #615048;
-}
-
-.brown-button:active,
-.card-link:active {
-  background-color: #615048;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.brown-button:disabled {
-  background-color: #E5E5E5;
-}
-
-.text-button:hover {
-  color: #FFFFFF;
-}
-
-.text-button:active {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.text-button:disabled {
   color: #FFFFFF;
 }
 
@@ -770,6 +738,18 @@ card-link:hover {
   flex-wrap: wrap;
 }
 
+.bread-crubs-list:hover {
+  opacity: 0.6;
+}
+
+.bread-crubs-list:focus {
+  color: FFFFFF;
+}
+
+.bread-crubs-list:active {
+  opacity: 0.3;
+}
+
 .group-flex-container {
   padding: 0;
   margin: 0;
@@ -969,6 +949,24 @@ card-link:hover {
   padding: 8px 26px;
 }
 
+.card-link:hover {
+  background-color: #615048;
+}
+
+.card-link:focus {
+  background-color: #615048;
+}
+
+.card-link:active {
+  background-color: #756157;
+color: rgba(255, 255, 255, 0.3);
+}
+
+.card-link:disabled {
+  background-color: #E5E5E5;
+color: #FFFFFF;
+}
+
 .brown {
   background-color: #756157;
 }
@@ -1086,13 +1084,6 @@ card-link:hover {
   border: 0;
   background: transparent;
   color: #FFFFFF;
-}
-
-.min-price-type:active,
-:hover,
-:focus {
-  outline: 0;
-  outline-offset: 0;
 }
 
 .range-slider {
@@ -1411,6 +1402,18 @@ card-link:hover {
   left: 0;
   margin: auto;
   padding: 12px 13px;
+}
+
+.social-icon:hover {
+  color:#68A2CA;
+}
+
+.social-icon:focus {
+  color:#68A2CA;
+}
+
+.social-icon:active {
+  color:#82B3D3;
 }
 
 .search-hotel {
