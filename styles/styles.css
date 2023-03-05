@@ -1786,12 +1786,19 @@ body {
   width: 577px;
 }
 
+.hotel-selection {
+  display: grid;
+  grid-template-columns: 137px 110px 220px 110px;
+  grid-template-rows: auto 48px auto 48px auto 48px 60px;
+}
+
 .modal-label {
   font-family: 'PT Sans';
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-align: start;
+  align-self: center;
 }
 
 .comment-date {
@@ -1821,33 +1828,13 @@ body {
   line-height: 24px;
 }
 
-.person-field {
+.person-field,
+.person-field-child {
   padding: 12px 40px;
-    text-align: center;
-    box-sizing: border-box;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-.min-person {
-  justify-self: start;
-}
-
-.max-person {
-  justify-self: end;
-}
-
-.button-person {
-  margin: 14px 10px;
-    padding: 0;
-    width: 20px;
-    height: 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    color: rgba(117, 97, 87, 0.3);
-}
 
 .calendar-icon {
   background-image: url(../img/calendar.svg);
@@ -1885,4 +1872,95 @@ body {
   line-height: 24px;
   text-align: center;
   color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.arrival-date {
+  grid-column: 1/2;
+}
+
+.modal-arrival {
+  grid-column: 2/-1;
+}
+
+.comment-grid {
+  grid-column: 2/-1;
+  grid-row: 2/3;
+}
+
+.departure-date {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.departure-field {
+  grid-column: 2/-1;
+  grid-row: 3/4;
+}
+
+.comment-text {
+  grid-column: 2/-1;
+  grid-row: 4/5;
+}
+
+.person-number {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+
+.person-field,
+.min-person,
+.max-person {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+
+.child-number {
+  grid-column: 3/4;
+  grid-row: 5/6;
+}
+
+.person-field-child,
+.min-button-child,
+.max-button-child {
+  grid-column: 4/5;
+  grid-row: 5/6;
+}
+
+.button-searching {
+  grid-column: 1/-1;
+  grid-row: 7/8;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+..min-person,
+.min-button-child {
+  justify-self: start;
+}
+
+.max-person,
+.max-button-child {
+  justify-self: end;
+}
+
+.button-person {
+  margin: 0;
+  margin: 14px 10px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.close-button-svg {
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
 }

@@ -220,52 +220,40 @@
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне </h2>
             <form class="hotel-selection" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="modal-label arrival-date" for="arrival-date">Дата заезда</label>
+              <label class="modal-label arrival-date" for="arrival-date">Дата Заезда:</label>
 
               <input class="modal-field calendar-icon modal-arrival" id="arrival-date" type="text" name="arrival-date"
                 placeholder="Введите дату" required value="27 апреля 2020">
               <p class="comment-date comment-grid red-color">Мы не можем отправить вас в прошлое</p>
 
-              <label class="modal-label departure-date" for="departure-date">Дата заезда</label>
-              <input class="modal-field calendar-icon" id="departure-date" type="text" name="departure-date"
-                placeholder="Введите дату" required value="1 сентября 2023">
+              <label class="modal-label departure-date" for="departure-date">Дата Выезда:</label>
+              <input class="modal-field calendar-icon departure-field" id="departure-date" type="text"
+                name="departure-date" placeholder="Введите дату" required value="1 сентября 2023">
               <p class="comment-date comment-text">На эти даты есть свободные номера. Пока есть.</p>
               <!--Кнопка увеличения количества взрослых-->
               <label class="modal-label person-number" for="person-number">Взрослые:</label>
               <input class="modal-field person-field modal-departure" id="person-number" type="number"
                 name="person-number" step="1" min="1" required value="2">
               <button class="button-person min-person" type="button">
-                <svg class="min-icon" aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 0L0 2L14 2V0L0 0Z" fill="black" />
-                </svg>
+                <svg class="min-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 20" width="21" height="20" fill="CurrentColor"><path d="M3.4 9v2h14V9h-14Z"></path></svg>
                 <span class="visually-hidden">Уменьшить количество</span>
               </button>
 
               <button class="button-person max-person" type="button">
-                <svg class="max-person" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="black" />
-                </svg>
+                <svg class="max-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" fill="CurrentColor"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"></path></svg>
                 <span class="visually-hidden">Увеличить количество</span>
               </button>
               <!--Кнопка увеличения количества детей-->
               <label class="modal-label child-number" for="child-number">Дети:</label>
-              <input class="modal-field person-field modal-departure" id="person-number" type="number"
+              <input class="modal-field person-field-child modal-departure" id="person-number" type="number"
                 name="person-number" step="1" min="1" required value="2">
-              <button class="button-person min-person" type="button">
-                <svg class="min-icon" aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 0L0 2L14 2V0L0 0Z" fill="black" />
-                </svg>
+              <button class="button-person min-button-child" type="button">
+                <svg class="min-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 20" width="21" height="20" fill="CurrentColor"><path d="M3.4 9v2h14V9h-14Z"></path></svg>
                 <span class="visually-hidden">Уменьшить количество</span>
               </button>
 
-              <button class="button-person max-person" type="button">
-                <svg class="max-person" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="black" />
-                </svg>
+              <button class="button-person max-button-child" type="button">
+                <svg class="max-persom" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" fill="CurrentColor"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"></path></svg>
                 <span class="visually-hidden">Увеличить количество</span>
               </button>
               <button class="button-searching button-text-field" type="button">Найти</button>
