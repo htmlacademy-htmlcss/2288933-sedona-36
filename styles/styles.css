@@ -127,6 +127,8 @@ body {
   max-width: 300px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  row-gap: 5px;
 }
 
 .search-item {
@@ -318,7 +320,7 @@ body {
 
 .question {
   margin: 0;
-  padding: 0 70px;
+  padding: 0 304px 0 304px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -329,7 +331,7 @@ body {
 .search-data {
   margin: 0;
   margin-top: 20px;
-  padding: 0 70px;
+  padding: 0 304px;
   margin-bottom: 54px;
 }
 
@@ -338,6 +340,8 @@ body {
   padding: 0;
   margin-top: 66px;
   margin-bottom: 25px;
+  padding-left: 290px;
+  padding-right: 290px;
 }
 
 .reason-hero-text {
@@ -359,8 +363,14 @@ body {
 
 .reason-hero-text,
 .reason-text,
-.search-data,
 .text-news {
+  font-size: 22px;
+  line-height: 26px;
+  padding: 0 274px 0 274px;
+}
+
+.search-data {
+  font-family: inherit;
   font-size: 22px;
   line-height: 26px;
 }
@@ -369,6 +379,7 @@ body {
   padding: 0;
   margin: 0;
   margin-bottom: 64px;
+  padding: 0 347px 0 347px;
 }
 
 
@@ -547,6 +558,7 @@ body {
 
 .news {
   padding: 0;
+  padding: 0 362px 0 362px;
   margin: 0;
   margin-top: 96px;
   margin-bottom: 20px;
@@ -579,6 +591,7 @@ body {
   color: #FFFFFF;
   cursor: pointer;
   padding: 8px 50px;
+  width: 376px;
 }
 
 .new-search-hotel:hover {
@@ -608,6 +621,7 @@ body {
   text-align: center;
   color: #000000;
   text-decoration: none;
+  width: 331px;
 }
 
 .phone-number:hover {
@@ -700,6 +714,8 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   margin-bottom: 20px;
+  padding-left: 347px;
+  padding-right: 347px;
 }
 
 /* Селекторы по странице каталога */
@@ -708,7 +724,7 @@ body {
   margin-top: 0;
   padding: 0;
   margin-bottom: 8px;
-  min-width: 495px;
+  width: 1060px;
   min-height: 78px;
   font-weight: 700;
   font-size: 60px;
@@ -1064,10 +1080,10 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 44px;
-  background-color: #F2F2F2;
+
   gap: 2px;
   max-width: 288px;
-  color: #F2F2F2;
+
 }
 
 .range-input {
@@ -1259,6 +1275,10 @@ body {
 .range-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.range-input {
+  -moz-appearance: textfield;
 }
 
 .left-input-form {
@@ -1653,7 +1673,7 @@ body {
 
 .field:not(:placeholder-shown) {
   background-color: #F2F2F2;
-  color: rgba(0, 0, 0, 0.3);
+  color: #000000;
   outline: 3px solid #000000;
 }
 
@@ -1679,6 +1699,7 @@ body {
   color: #FFFFFF;
   text-align: center;
   font-family: inherit;
+  width: 232px;
 }
 
 .newsletters-button:hover {
@@ -1725,6 +1746,7 @@ body {
 
 .text-news {
   padding: 0;
+  padding: 0 362px 0 362px;
   margin: 0;
   padding-bottom: 54px;
   color: #FFFFFF;
@@ -2013,6 +2035,10 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .min-person,
