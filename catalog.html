@@ -5,9 +5,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -19,13 +16,13 @@
       <nav class="header-navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -72,16 +69,14 @@
                 <ul class="filter-list">
                   <li class="filter-list-item">
                     <label class="control">
-                      <input class="control-input visually-hidden" type="checkbox" name="hotels-type" value="a"
-                        checked>
+                      <input class="control-input visually-hidden" type="checkbox" name="hotels-type" value="a" checked>
                       <span class="control-mark"></span>
                       Бассейн
                     </label>
                   </li>
                   <li class="filter-list-item">
                     <label class="control">
-                      <input class="control-input visually-hidden" type="checkbox" name="hotels-type" value="b"
-                        checked>
+                      <input class="control-input visually-hidden" type="checkbox" name="hotels-type" value="b" checked>
                       <span class="control-mark"></span>
                       Парковка
                     </label>
@@ -97,27 +92,26 @@
               </fieldset>
               <!--Список типа жилья с радиокнопками и одним вариантом выбора, стоящим по умолчанию-->
               <fieldset class="group-radio">
-                <legend class="filter-hotels-type">Тип жилья:</legend>
+                <legend class="filter-hotels-type">Тип Жилья:</legend>
                 <ul class="filter-radio">
                   <li class="filter-radio-item">
                     <label class="control">
 
-                      <input class="control-input visually-hidden" type="radio" name="hotel" value="hotel">
+                      <input class="control-input visually-hidden" type="radio" name="radio" value="hotel" checked>
                       <span class="control-mark"></span>
                       Гостиница
-                    </label>
                     </label>
                   </li>
                   <li class="filter-radio-item">
                     <label class="control">
-                      <input class="control-input visually-hidden" type="radio" name="Motel" value="motel">
+                      <input class="control-input visually-hidden" type="radio" name="radio" value="motel">
                       <span class="control-mark"></span>
                       Мотель
                     </label>
                   </li>
                   <li class="filter-radio-item">
                     <label class="control">
-                      <input class="control-input visually-hidden" type="radio" name="apartment" value="apartment">
+                      <input class="control-input visually-hidden" type="radio" name="radio" value="apartment">
                       <span class="control-mark"></span>
                       Апартаменты
                     </label>
@@ -161,8 +155,8 @@
                 </button>
               </div>
             </div>
-        </div>
         </form>
+        </div>
       </section>
       <section class="catalog-hotels">
         <h2 class="visually-hidden">Каталог гостиниц Седона</h2>
@@ -200,7 +194,7 @@
             </a>
             <span class="type-hotel">Гостиница</span>
             <span class="price">От 4000 ₽</span>
-            <a class="card-link brown button">Подробнее</a>
+            <a class="card-link brown button" href="#">Подробнее</a>
             <button class="favorites-button text-button" type="button" name="favorites-button">В
               избранное</button>
             <p class="visually-hidden">Звезды и рейтинг</p>
@@ -217,7 +211,7 @@
             </a>
             <span class="type-hotel">Гостиница</span>
             <span class="price">От 5000 ₽</span>
-            <a class="card-link brown button">Подробнее</a>
+            <a class="card-link brown button" href="#">Подробнее</a>
             <button class="favorites-button-green text-button" type="button" name="favorites-button">В
               избранное</button>
             <p class="visually-hidden">Звезды и рейтинг</p>
@@ -233,7 +227,7 @@
             </a>
             <span class="type-hotel">Гостиница</span>
             <span class="price">От 2500 ₽</span>
-            <a class="card-link brown button">Подробнее</a>
+            <a class="card-link brown button" href="#">Подробнее</a>
             <button class="favorites-button text-button" type="button" name="favorites-button">В
               избранное</button>
             <p class="visually-hidden">Звезды и рейтинг</p>
@@ -250,7 +244,7 @@
             </a>
             <span class="type-hotel">Гостиница</span>
             <span class="price">От 1500 ₽</span>
-            <a class="card-link brown button">Подробнее</a>
+            <a class="card-link brown button" href="#">Подробнее</a>
             <button class="favorites-button text-button" type="button" name="favorites-button">В
               избранное</button>
             <p class="visually-hidden">Звезды и рейтинг</p>
