@@ -1113,13 +1113,14 @@ body {
 
 .range-wrapper-inputs {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
   margin-bottom: 44px;
   gap: 2px;
   max-width: 288px;
-
 }
 
 .range-input {
@@ -1320,16 +1321,22 @@ body {
 }
 
 .left-input-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-column-gap: 71px;
      -moz-column-gap: 71px;
           column-gap: 71px;
 }
 
 .right-input-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-column-gap: 69px;
      -moz-column-gap: 69px;
           column-gap: 69px;
@@ -1801,6 +1808,7 @@ body {
   background-color: #82B3D3;
   background-image: url("../img/blur_banner.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .news-button {
