@@ -112,7 +112,7 @@ body {
 
 .navigation-link:hover {
   -webkit-text-decoration: underline 2px #756257;
-          text-decoration: underline 2px #756257;
+  text-decoration: underline 2px #756257;
   text-underline-offset: 23px;
 }
 
@@ -285,6 +285,15 @@ body {
   position: relative;
 }
 
+.hero-banner {
+  background-color: #82B3D3;
+  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1200px;
+  min-height: 485px;
+}
+
 .banner-sedona::after {
   position: absolute;
   content: url("../img/vector_white.svg");
@@ -294,6 +303,7 @@ body {
   z-index: 2;
   margin: 0;
   padding: 0;
+  height: 57px;
 }
 
 
@@ -427,7 +437,7 @@ body {
 .advantages-image {
   height: inherit;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   min-height: 385px;
 }
 
@@ -580,6 +590,7 @@ body {
   cursor: pointer;
   padding: 8px 50px;
   width: 376px;
+  text-decoration: none;
 }
 
 .new-search-hotel:hover {
@@ -676,7 +687,7 @@ body {
   border: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -943,8 +954,8 @@ body {
   grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
   grid-template-rows: min-content min-content min-content min-content;
   -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
   row-gap: 14px;
   min-height: 438px;
 }
@@ -992,7 +1003,7 @@ body {
 .hotel-catalog-image {
   display: block;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   max-width: 100%;
 }
 
@@ -1113,13 +1124,14 @@ body {
 
 .range-wrapper-inputs {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
   margin-bottom: 44px;
   gap: 2px;
   max-width: 288px;
-
 }
 
 .range-input {
@@ -1301,38 +1313,44 @@ body {
   line-height: 24px;
   text-align: left;
   -webkit-appearance: textfield;
-     -moz-appearance: textfield;
-          appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
   cursor: pointer;
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   margin: 0;
 }
 
 .range-input {
   -webkit-appearance: textfield;
-     -moz-appearance: textfield;
-          appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .left-input-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-column-gap: 71px;
-     -moz-column-gap: 71px;
-          column-gap: 71px;
+  -moz-column-gap: 71px;
+  column-gap: 71px;
 }
 
 .right-input-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-column-gap: 69px;
-     -moz-column-gap: 69px;
-          column-gap: 69px;
+  -moz-column-gap: 69px;
+  column-gap: 69px;
 }
 
 .catalog-hotels {
@@ -1378,8 +1396,8 @@ body {
   background-repeat: no-repeat;
   background-position: right 12px center;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   box-sizing: border-box;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
@@ -1533,7 +1551,7 @@ body {
   background-image: url("../img/star.svg");
   background-repeat: space;
   -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   margin-top: 5px;
 }
 
@@ -1801,6 +1819,7 @@ body {
   background-color: #82B3D3;
   background-image: url("../img/blur_banner.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .news-button {
@@ -2073,7 +2092,7 @@ body {
   line-height: 24px;
   text-align: start;
   -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 .comment-date {
@@ -2084,7 +2103,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   -ms-grid-row-align: start;
-      align-self: start;
+  align-self: start;
 }
 
 .red-color {
@@ -2093,12 +2112,12 @@ body {
 
 .modal-field {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   -ms-grid-row-align: stretch;
-      align-self: stretch;
+  align-self: stretch;
   -ms-grid-column-align: stretch;
-      justify-self: stretch;
+  justify-self: stretch;
   background: #F2F2F2;
   border-radius: 4px;
   border: none;
@@ -2152,21 +2171,21 @@ body {
 .child-number {
   margin-right: 83px;
   -ms-grid-column-align: end;
-      justify-self: end;
+  justify-self: end;
 }
 
 .child-number {
   margin-right: 83px;
   -ms-grid-column-align: end;
-      justify-self: end;
+  justify-self: end;
 }
 
 .button-searching {
   margin: 0;
   -ms-grid-column-align: stretch;
-      justify-self: stretch;
+  justify-self: stretch;
   -ms-grid-row-align: stretch;
-      align-self: stretch;
+  align-self: stretch;
   padding: 18px 0;
   background-color: #83B3D3;
   border: none;
@@ -2290,26 +2309,26 @@ body {
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   margin: 0;
 }
 
 input[type="number"] {
   -webkit-appearance: textfield;
-     -moz-appearance: textfield;
-          appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .min-person,
 .min-button-child {
   -ms-grid-column-align: start;
-      justify-self: start;
+  justify-self: start;
 }
 
 .max-person,
 .max-button-child {
   -ms-grid-column-align: end;
-      justify-self: end;
+  justify-self: end;
 }
 
 .button-person {
@@ -2352,11 +2371,11 @@ input[type="number"] {
   -ms-grid-row-span: 1;
   grid-row: 5/6;
   -ms-grid-column-align: end;
-      justify-self: end;
+  justify-self: end;
   margin-left: 10px;
   margin-right: 46px;
   -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 .tooltip-button {
@@ -2383,7 +2402,7 @@ input[type="number"] {
   left: 50%;
   top: 100%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   font-size: 16px;
   line-height: 20px;
   text-align: left;
@@ -2401,7 +2420,7 @@ input[type="number"] {
   position: absolute;
   left: 52%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   bottom: 100%;
   content: "";
   width: 19px;
@@ -2412,6 +2431,6 @@ input[type="number"] {
 .hero-banner {
   max-width: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   min-height: 485px;
 }

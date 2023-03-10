@@ -69,8 +69,7 @@
           <h1 class="visually-hidden page-title">Сервис подбора гостиниц в городе Седона.</h1>
           <!--Баннер города Седона с шрифтовым изображением-->
           <h2 class="visually-hidden page-title">Приветственный баннер.</h2>
-          <div class="banner-sedona">
-            <img class="hero-banner" src="img/banner.jpg" width="1200" height="485" alt="Изображение гор Седоны.">
+          <div class="banner-sedona hero-banner">
             <img class="hero-lettering" src="img/lettering.svg" width="458" height="352" alt="Леттеринг на баннере.">
           </div>
           <!--Блок преимуществ,список-->
@@ -147,7 +146,7 @@
             <p class="question">Заинтересовались?</p>
             <p class="search-data">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения
               гостиниц в Седоне</p>
-            <button class="new-search-hotel" type="button" name="search-form">Поиск гостиницы в седоне</button>
+            <a class="new-search-hotel" href="catalog.html">Поиск гостиницы в седоне</a>
           </section>
           <!--Секция подписки на рассылку-->
           <section class="newsletters">
@@ -208,7 +207,7 @@
               </a>
             </li>
           </ul>
-          <a class="phone-number" href="#"><span>+7 (812) 812-12-12</span></a>
+          <a class="phone-number" href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
           <a class="html-logo" href="https://htmlacademy.ru/">
             <span class="visually-hidden">Логотип html академии.</span>
             <svg class="htmlacademy-logo" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
@@ -221,7 +220,6 @@
         </nav>
       </footer>
     </div>
-
     <div class="modal-container">
       <div class="modal modal-auth">
         <div class="modal-grid-container">
@@ -238,11 +236,9 @@
             <h2 class="modal-title">Поиск гостиницы в Седоне </h2>
             <form class="hotel-selection" action="https://echo.htmlacademy.ru/" method="post">
               <label class="modal-label arrival-date" for="arrival-date">Дата Заезда:</label>
-
               <input class="modal-field calendar-icon modal-arrival" id="arrival-date" type="text" name="arrival-date"
                 placeholder="Введите дату" required value="27 апреля 2020">
               <p class="comment-date comment-grid red-color error-class">Мы не можем отправить вас в прошлое</p>
-
               <label class="modal-label departure-date" for="departure-date">Дата Выезда:</label>
               <input class="modal-field calendar-icon departure-field" id="departure-date" type="text"
                 name="departure-date" placeholder="Введите дату" required value="1 сентября 2023">
@@ -258,7 +254,6 @@
                 </svg>
                 <span class="visually-hidden">Уменьшить количество</span>
               </button>
-
               <button class="button-person max-person" type="button">
                 <svg class="max-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20" width="20" height="20" fill="CurrentColor">
@@ -283,7 +278,6 @@
                 </svg>
                 <span class="visually-hidden">Уменьшить количество</span>
               </button>
-
               <button class="button-person max-button-child" type="button">
                 <svg class="max-person" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20" width="20" height="20" fill="CurrentColor">
@@ -297,7 +291,6 @@
         </div>
       </div>
     </div>
-
   </body>
 
 </html>
